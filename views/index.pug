@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Date Parser MicroService
+    link(rel='shortcut icon', href='https://cdn.glitch.com/46a3d01c-19df-4356-83d7-91c2291c6659%2Ffavicon%20(1).ico?1518796908447', type='image/x-icon')
+    link(href='https://fonts.googleapis.com/css?family=Roboto', rel='stylesheet', type='text/css')
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    link(href='/public/style.css', rel='stylesheet', type='text/css')
+  body
+    .container
+      h3
+        | Hello! Submit a date time to the route
+        | to see the magic.
+      br
+      code /date/:date 
+      br
+      if dateObj
+        code= dateObj
